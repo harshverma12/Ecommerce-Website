@@ -7,7 +7,7 @@ const ProtectedRoute = ({  component: Component, ...rest }) => {
 
   return (
     <Fragment>
-      {loading === false && (
+      {!loading && (
         <Route
           {...rest}
           render={(props) => {
