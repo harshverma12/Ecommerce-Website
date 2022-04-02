@@ -94,8 +94,8 @@
 
 .updateProfileBtn {
   border: none;
-  background-color: gold;
-  color: white;
+  background-color: #1e90ff;
+   color: white;
   font: 300 0.9vmax "Roboto";
   width: 100%;
   padding: 0.8vmax;
@@ -107,7 +107,8 @@
 }
 
 .updateProfileBtn:hover {
-  background-color: rgb(233, 200, 15);
+  background-color: #1e90ff;
+    
 }
 
 @media screen and (max-width: 600px) {
