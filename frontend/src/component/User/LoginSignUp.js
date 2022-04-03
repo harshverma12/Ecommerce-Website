@@ -1,7 +1,9 @@
+/* eslint-disable react/jsx-no-undef */
 import React, { Fragment, useRef, useState, useEffect } from "react";
 import "./LoginSignUp.css";
 import Loader from "../layout/Loader/Loader";
 import { Link } from "react-router-dom";
+// import MobileOutlineIcon from
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LockOpenIcon from "@material-ui/icons/LockOpen";
 import FaceIcon from "@material-ui/icons/Face";
@@ -28,9 +30,11 @@ const LoginSignUp = ({ history, location }) => {
     name: "",
     email: "",
     password: "",
+    college: "",
+    mobile: "",
   });
 
-  const { name, email, password } = user;
+  const { name, email, password,college,mobile  } = user;
 
   const [avatar, setAvatar] = useState("/Profile.png");
   const [avatarPreview, setAvatarPreview] = useState("/Profile.png");
@@ -48,6 +52,11 @@ const LoginSignUp = ({ history, location }) => {
     myForm.set("name", name);
     myForm.set("email", email);
     myForm.set("password", password);
+    // eslint-disable-next-line no-undef
+    myForm.set("college", college);
+    // eslint-disable-next-line no-undef
+    myForm.set("moblile", mobile);
+
     myForm.set("avatar", avatar);
     dispatch(register(myForm));
   };
@@ -135,7 +144,7 @@ const LoginSignUp = ({ history, location }) => {
                     onChange={(e) => setLoginPassword(e.target.value)}
                   />
                 </div>
-                <Link to="/password/forgot">Forget Password ?</Link>
+                <Link to="/password/forgot">Forgot Password ?</Link>
                 <input type="submit" value="Login" className="loginBtn" />
               </form>
               <form
@@ -163,6 +172,28 @@ const LoginSignUp = ({ history, location }) => {
                     required
                     name="email"
                     value={email}
+                    onChange={registerDataChange}
+                  />
+                </div>
+                <div className="signUpCollege">
+                   <CollegeOutlineIcon />
+                  <input
+                    type="text"
+                    placeholder="College"
+                    required
+                    name="college"
+                    value={college}
+                    onChange={registerDataChange}
+                  />
+                </div>
+                <div className="signUpMobile">
+                  <MobileOutlineIcon />
+                  <input
+                    type="number"
+                    placeholder="Mobile Number"
+                    required
+                    name="mobile"
+                    value={mobile}
                     onChange={registerDataChange}
                   />
                 </div>
