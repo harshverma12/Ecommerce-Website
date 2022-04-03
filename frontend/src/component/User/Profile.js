@@ -28,7 +28,7 @@ const Profile = ({ history }) => {
             </div>
             <div>
               <div>
-                <h4>Full Name</h4>
+                <h4> Name</h4>
                 <p>{user.name}</p>
               </div>
               <div>
