@@ -5,7 +5,7 @@ import YouTubeIcon from "@material-ui/icons/YouTube";
 import InstagramIcon from "@material-ui/icons/Instagram";
 const About = () => {
   const visitInstagram = () => {
-    window.location = "https://instagram.com/";
+    window.location = "https://instagram.com/ ";
   };
   return (
     <div className="aboutSection">
@@ -18,27 +18,27 @@ const About = () => {
           <div>
             <Avatar
               style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
-              // src="https://res.cloudinary.com/tripleayt/image/upload/v1631555947/products/jpyibarlaxawvcvqjv5b.png "
+              // src="https://res.cloudinary.com/tripleayt/image/upload/v1631555947/products/jpyibarlaxawvcvqjv5b.png"
               alt="Founder"
             />
-            <Typography>               </Typography>
+            <Typography>  </Typography>
             <Button onClick={visitInstagram} color="primary">
               Visit Instagram
             </Button>
             <span>
-         
+     
             </span>
           </div>
           <div className="aboutSectionContainer2">
-            <Typography component="h2">    </Typography>
-            {/* <a
-              // href="https://www.youtube.com/channel/UCO7afj9AUo0zV69pqEYhcjw"
+            <Typography component="h2">Our Brands</Typography>
+            <a
+              href="https://www.youtube.com/channel/"
               target="blank"
             >
               <YouTubeIcon className="youtubeSvgIcon" />
-            </a> */}
+            </a>
 
-            <a href="https://instagram.com/meabhisingh" target="blank">
+            <a href="https://instagram.com/ " target="blank">
               <InstagramIcon className="instagramSvgIcon" />
             </a>
           </div>
