@@ -12,12 +12,13 @@ import MetaData from "../layout/MetaData";
 
 const categories = [
   "Laptop",
-  "Footwear",
-  "Bottom",
-  "Tops",
-  "Attire",
+ 
+  "Labcoat",
+  "Drafter",
+  "Dangri",
+  "Mobile",
   "Camera",
-  "SmartPhones",
+
 ];
 
 const Products = ({ match }) => {
