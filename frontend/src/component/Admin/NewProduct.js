@@ -153,7 +153,7 @@ const NewProduct = ({ history }) => {
                 type="text"
                 placeholder="College"
                 required
-                onChange={(e) => setContact(e.target.value)}
+                onChange={(e) => setCollege(e.target.value)}
               />
             </div>
             <div>
