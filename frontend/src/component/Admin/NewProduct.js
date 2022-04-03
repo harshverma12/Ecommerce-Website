@@ -25,6 +25,7 @@ const NewProduct = ({ history }) => {
 
   const [contact, setContact] = useState(0);
 
+  const [college, setCollege] = useState("");
   const [category, setCategory] = useState("");
   const [Stock, setStock] = useState(0);
   const [images, setImages] = useState([]);
@@ -63,6 +64,7 @@ const NewProduct = ({ history }) => {
     myForm.set("description", description);
     // eslint-disable-next-line no-undef
     myForm.set("contact", contact);
+    myForm.set("college", college);
     myForm.set("category", category);
     myForm.set("Stock", Stock);
 
@@ -141,6 +143,15 @@ const NewProduct = ({ history }) => {
               <input
                 type="number"
                 placeholder="Contact Number"
+                required
+                onChange={(e) => setContact(e.target.value)}
+              />
+            </div>
+            <div>
+              <AttachMoneyIcon />
+              <input
+                type="text"
+                placeholder="College"
                 required
                 onChange={(e) => setContact(e.target.value)}
               />
