@@ -162,6 +162,8 @@ const LoginSignUp = ({ history, location }) => {
                     onChange={registerDataChange}
                   />
                 </div>
+                <div>                </div>
+
                 <div className="signUpEmail">
                   <MailOutlineIcon />
                   <input
@@ -173,6 +175,8 @@ const LoginSignUp = ({ history, location }) => {
                     onChange={registerDataChange}
                   />
                 </div>
+                <div>                </div>
+
                 <div className="signUpCollege">
                    {/* <CollegeOutlineIcon /> */}
                   <input
@@ -184,6 +188,8 @@ const LoginSignUp = ({ history, location }) => {
                     onChange={registerDataChange}
                   />
                 </div>
+                <div>                </div>
+
                 <div className="signUpMobile">
                   {/* <CallOutlinedIcon /> */}
                   <input
@@ -195,6 +201,8 @@ const LoginSignUp = ({ history, location }) => {
                     onChange={registerDataChange}
                   />
                 </div>
+                <div>                </div>
+
                 <div className="signUpPassword">
                   <LockOpenIcon />
                   <input
@@ -206,6 +214,7 @@ const LoginSignUp = ({ history, location }) => {
                     onChange={registerDataChange}
                   />
                 </div>
+                <div>                </div>
 
                 <div id="registerImage">
                   <img src={avatarPreview} alt="Avatar Preview" />
@@ -216,6 +225,8 @@ const LoginSignUp = ({ history, location }) => {
                     onChange={registerDataChange}
                   />
                 </div>
+                <div>                </div>
+
                 <input type="submit" value="Register" className="signUpBtn" />
               </form>
             </div>
