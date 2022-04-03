@@ -23,12 +23,12 @@ const userSchema = new mongoose.Schema({
     maxLength: [30, "Name cannot exceed 30 characters"],
     minLength: [1, "Name should have more than 1 characters"],
   },
-  // mobile: {
-  //   type:Number,
-  //   required: [true, "Please Enter Your Number"],
-  //   maxLength: [12, "Number cannot exceed 30 characters"],
-  //   minLength: [10, "Number should have   10 digits "],
-  // },
+  mobile: {
+    type:Number,
+    required: [true, "Please Enter Your Number"],
+    // maxLength: [12, "Number cannot exceed 30 characters"],
+    // minLength: [10, "Number should have   10 digits "],
+  },
   password: {
     type: String,
     required: [true, "Please Enter Your Password"],
