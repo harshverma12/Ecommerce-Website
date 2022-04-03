@@ -4,7 +4,7 @@ import "./LoginSignUp.css";
 import Loader from "../layout/Loader/Loader";
 import { Link } from "react-router-dom";
 // import MobileOutlineIcon from
-import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
+// import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LockOpenIcon from "@material-ui/icons/LockOpen";
 import FaceIcon from "@material-ui/icons/Face";
@@ -174,7 +174,7 @@ const LoginSignUp = ({ history, location }) => {
                   />
                 </div>
                 <div className="signUpCollege">
-                   <CollegeOutlineIcon />
+                   {/* <CollegeOutlineIcon /> */}
                   <input
                     type="text"
                     placeholder="College"
@@ -185,7 +185,7 @@ const LoginSignUp = ({ history, location }) => {
                   />
                 </div>
                 <div className="signUpMobile">
-                  <CallOutlinedIcon />
+                  {/* <CallOutlinedIcon /> */}
                   <input
                     type="number"
                     placeholder="Mobile Number"
