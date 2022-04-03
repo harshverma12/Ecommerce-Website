@@ -22,6 +22,9 @@ const NewProduct = ({ history }) => {
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
   const [description, setDescription] = useState("");
+
+  const [contact, setContact] = useState(0);
+
   const [category, setCategory] = useState("");
   const [Stock, setStock] = useState(0);
   const [images, setImages] = useState([]);
@@ -58,6 +61,8 @@ const NewProduct = ({ history }) => {
     myForm.set("name", name);
     myForm.set("price", price);
     myForm.set("description", description);
+    // eslint-disable-next-line no-undef
+    myForm.set("contact", contact);
     myForm.set("category", category);
     myForm.set("Stock", Stock);
 
@@ -131,7 +136,15 @@ const NewProduct = ({ history }) => {
                 rows="1"
               ></textarea>
             </div>
-
+            <div>
+              <AttachMoneyIcon />
+              <input
+                type="number"
+                placeholder="Contact Number"
+                required
+                onChange={(e) => setContact(e.target.value)}
+              />
+            </div>
             <div>
               <AccountTreeIcon />
               <select onChange={(e) => setCategory(e.target.value)}>
