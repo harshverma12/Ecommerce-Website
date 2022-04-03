@@ -7,6 +7,7 @@ const Footer = () => {
     <footer id="footer">
       <div className="leftFooter">
   
+  
        
       </div>
 
