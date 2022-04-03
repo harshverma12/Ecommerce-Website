@@ -148,6 +148,9 @@ const ProductDetails = ({ match }) => {
                     Add to Cart
                   </button>
                 </div>
+                <div className="detailsBlock-3">
+                Contact  : <p>{product.contact}</p>
+                </div>
 
                 <p>
                   Status:
