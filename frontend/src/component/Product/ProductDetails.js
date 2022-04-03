@@ -149,8 +149,13 @@ const ProductDetails = ({ match }) => {
                   </button>
                 </div>
                 <div className="detailsBlock-3">
-                Contact  : <p>{product.contact}</p>
+                Contact Number : <p>{product.contact}</p>
                 </div>
+
+                <div>
+                College : <p>  {product.college}</p>
+                </div>
+
 
                 <p>
                   Status:
