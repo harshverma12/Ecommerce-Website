@@ -31,7 +31,7 @@ const LoginSignUp = ({ history, location }) => {
     name: "",
     email: "",
     college: "",
-    mobile: "",
+    // mobile: "",
     password: "",
   });
 
@@ -53,7 +53,7 @@ const LoginSignUp = ({ history, location }) => {
     myForm.set("name", name);
     myForm.set("email", email);
     myForm.set("college", college);
-     myForm.set("moblile", mobile);
+    //  myForm.set("moblile", mobile);
     myForm.set("password", password);
     myForm.set("avatar", avatar);
     dispatch(register(myForm));
@@ -188,20 +188,20 @@ const LoginSignUp = ({ history, location }) => {
                     onChange={registerDataChange}
                   />
                 </div>
-                <div>                </div>
-
+                
+{/* 
                 <div className="signUpMobile">
                   {/* <CallOutlinedIcon /> */}
-                  <input
+                  {/* <input
                     type="number"
                     placeholder="Mobile Number"
                     required
                     name="mobile"
                     value={mobile}
                     onChange={registerDataChange}
-                  />
-                </div>
-                <div>                </div>
+                  /> */}
+                
+               
 
                 <div className="signUpPassword">
                   <LockOpenIcon />
