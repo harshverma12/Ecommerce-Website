@@ -35,7 +35,7 @@ const LoginSignUp = ({ history, location }) => {
     password: "",
   });
 
-  const { name, email,college,mobile, password } = user;
+  const { name, email,college, password } = user;
 
   const [avatar, setAvatar] = useState("/Profile.png");
   const [avatarPreview, setAvatarPreview] = useState("/Profile.png");
@@ -214,7 +214,7 @@ const LoginSignUp = ({ history, location }) => {
                     onChange={registerDataChange}
                   />
                 </div>
-                <div>                </div>
+         
 
                 <div id="registerImage">
                   <img src={avatarPreview} alt="Avatar Preview" />
@@ -225,7 +225,7 @@ const LoginSignUp = ({ history, location }) => {
                     onChange={registerDataChange}
                   />
                 </div>
-                <div>                </div>
+         
 
                 <input type="submit" value="Register" className="signUpBtn" />
               </form>
