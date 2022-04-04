@@ -20,6 +20,10 @@ const productSchema = mongoose.Schema({
     required: [true, "Please Enter  Number"],
     maxLength: [10, "Number cannot exceed 10  characters"],
   },
+  college: {
+    type: String,
+    required: [true, "Please Enter College"],
+  },
   ratings: {
     type: Number,
     default: 0,
