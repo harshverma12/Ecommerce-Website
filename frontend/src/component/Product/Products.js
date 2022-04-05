@@ -11,13 +11,41 @@ import Typography from "@material-ui/core/Typography";
 import MetaData from "../layout/MetaData";
 
 const categories = [
-  "Laptop",
+  // "Laptop",
  
-  "Labcoat",
-  "Drafter",
-  "Dangri",
-  "Mobile",
-  "Camera",
+  // "Labcoat",
+  // "Drafter",
+  // "Dangri",
+  // "Mobile",
+  // "Camera",
+"Durrie Weaving",
+"Nandna Print",
+"Mandana Art",
+"Zari Zardozi ",
+"Dhokra",
+"Bamboo Basketry & Weaving ",
+"Bagh printing",
+"Papier Mache",
+"Gond Paintings",
+"Batik print",
+"Chanderi",
+" Pottery",
+"JewelLEry and Gemstones",
+"Block painting",
+"Jodhpuri Juttis",
+"Cane and bamboo",
+
+
+
+
+
+
+
+
+
+
+
+
 
 ];
 

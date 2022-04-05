@@ -39,10 +39,7 @@ const Profile = ({ history }) => {
                 <h4>College</h4>
                 <p>{user.college}</p>
               </div>
-              {/* <div>
-                <h4>Mobile</h4>
-                <p>{user.mobile}</p>
-              </div> */}
+             
               <div>
                 <h4>Joined On</h4>
                 <p>{String(user.createdAt).substr(0, 10)}</p>
