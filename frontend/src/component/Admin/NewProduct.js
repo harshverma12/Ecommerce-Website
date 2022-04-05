@@ -32,13 +32,24 @@ const NewProduct = ({ history }) => {
   const [imagesPreview, setImagesPreview] = useState([]);
 
   const categories = [
-    "Laptop",
-    "Footwear",
-    "Bottom",
-    "Tops",
-    "Attire",
-    "Camera",
-    "SmartPhones",
+    "Durrie Weaving",
+    "Nandna Print",
+    "Mandana Art",
+    "Zari Zardozi ",
+    "Dhokra",
+    "Bamboo Basketry & Weaving ",
+    "Bagh printing",
+    "Papier Mache",
+    "Gond Paintings",
+    "Batik print",
+    "Chanderi",
+    " Pottery",
+    "JewelLEry and Gemstones",
+    "Block painting",
+    "Jodhpuri Juttis",
+    "Cane and bamboo",
+    
+    
   ];
 
   useEffect(() => {

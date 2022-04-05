@@ -14,11 +14,12 @@
 
 .banner > h1 {
   margin: 5vmax;
-
+color: black;
   font: 600 2.5vmax "Roboto";
 }
 
 .banner > p {
+  color: black;
   font: 300 1.4vmax "Lucida Sans";
 }
 
