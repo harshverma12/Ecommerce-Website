@@ -79,6 +79,7 @@ color: black;
   text-decoration: none;
   color: rgb(48, 48, 48);
   margin: 2vmax;
+  border: 1px solid gray;
   transition: all 0.5s;
   padding-bottom: 0.5vmax;
 }
