@@ -74,7 +74,7 @@ const ProductDetails = ({ match }) => {
 
     myForm.set("rating", rating);
     myForm.set("comment", comment);
-    // myForm.set("productId", match.params.id);
+    myForm.set("productId", match.params.id);
 
     dispatch(newReview(myForm));
 
@@ -148,24 +148,25 @@ const ProductDetails = ({ match }) => {
                     Add to Cart
                   </button>
                 </div>
-                <div className="detailsBlock-3">
+                <div className="detailsBlock-4">
                 Contact Number : <p>{product.contact}</p>
                 </div>
 
                 <div>
+                {/* <div className="detailsBlock-5"> */}
                 College : <p>  {product.college}</p>
                 </div>
 
 
-                {/* <p>
+                <p>
                   Status:
                   <b className={product.Stock < 1 ? "redColor" : "greenColor"}>
                     {product.Stock < 1 ? "OutOfStock" : "InStock"}
                   </b>
-                </p> */}
+                </p>
               </div>
 
-              <div className="detailsBlock-4">
+              <div className="detailsBlock-6">
                 Description : <p>{product.description}</p>
               </div>
 
