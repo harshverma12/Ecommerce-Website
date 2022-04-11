@@ -10,6 +10,7 @@ import DescriptionIcon from "@material-ui/icons/Description";
 import StorageIcon from "@material-ui/icons/Storage";
 import SpellcheckIcon from "@material-ui/icons/Spellcheck";
 import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
+import PhoneIcon from "@material-ui/icons/Phone";
 import SideBar from "./Sidebar";
 import { NEW_PRODUCT_RESET } from "../../constants/productConstants";
 
@@ -140,7 +141,7 @@ const NewProduct = ({ history }) => {
               ></textarea>
             </div>
             <div>
-              <AttachMoneyIcon />
+              <PhoneIcon />
               <input
                 type="number"
                 placeholder="Contact Number"
