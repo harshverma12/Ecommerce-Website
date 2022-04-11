@@ -148,15 +148,19 @@ const ProductDetails = ({ match }) => {
                     Add to Cart
                   </button>
                 </div>
+                
+                <div>           
+
                 <div className="detailsBlock-4">
                 Contact Number : <p>{product.contact}</p>
-                </div>
+                </div>       </div>
 
+                <div>
                 <div>
                 {/* <div className="detailsBlock-5"> */}
                 College : <p>  {product.college}</p>
                 </div>
-
+                </div>
 
                 <p>
                   Status:
