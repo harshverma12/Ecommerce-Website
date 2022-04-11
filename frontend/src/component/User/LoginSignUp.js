@@ -183,7 +183,7 @@ const LoginSignUp = ({ history, location }) => {
                 <div>                </div>
 
                 <div className="signUpCollege">
-                 <AccountBalanceIcon/>
+                 <AccountBalanceIcon />
 
                   <input
                     type="text"
