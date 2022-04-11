@@ -150,18 +150,20 @@ const ProductDetails = ({ match }) => {
                 </div>
 
                 <div>           
-
-                {/* <div className="detailsBlock-4"> */}
+<p></p>
+                <div className="detailsBlock-4">
                 Contact Number :  {product.contact}
                 </div>      
-                 {/* </div> */}
+                 </div>
+                 <p></p>
 
-                {/* <div> */}
+               
                 <div>
                 <div className="detailsBlock-5">
                 College :    {product.college} 
                 </div>
                 </div>
+                <p></p>
 
                 <p>
                   Status:
