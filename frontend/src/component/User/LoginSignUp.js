@@ -11,6 +11,7 @@ import FaceIcon from "@material-ui/icons/Face";
 import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, login, register } from "../../actions/userAction";
 import { useAlert } from "react-alert";
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 
 const LoginSignUp = ({ history, location }) => {
   const dispatch = useDispatch();
@@ -117,6 +118,10 @@ const LoginSignUp = ({ history, location }) => {
               <div>
                 <div className="login_signUp_toggle">
                   <p onClick={(e) => switchTabs(e, "login")}>LOGIN</p>
+
+
+
+                  
                   <p onClick={(e) => switchTabs(e, "register")}>REGISTER</p>
                 </div>
                 <button ref={switcherTab}></button>
@@ -178,7 +183,8 @@ const LoginSignUp = ({ history, location }) => {
                 <div>                </div>
 
                 <div className="signUpCollege">
-                   {/* <CollegeOutlineIcon /> */}
+                 <AccountBalanceIcon/>
+
                   <input
                     type="text"
                     placeholder="College"
