@@ -149,6 +149,22 @@ const ProductDetails = ({ match }) => {
                   </button>
                 </div>
 
+                <div>           
+<p></p>
+                <div className="detailsBlock-4">
+                Contact Number :  {product.contact}
+                </div>      
+                 </div>
+                 <p></p>
+
+               
+                <div>
+                <div className="detailsBlock-5">
+                College :    {product.college} 
+                </div>
+                </div>
+                <p></p>
+
                 <p>
                   Status:
                   <b className={product.Stock < 1 ? "redColor" : "greenColor"}>
@@ -157,7 +173,7 @@ const ProductDetails = ({ match }) => {
                 </p>
               </div>
 
-              <div className="detailsBlock-4">
+              <div className="detailsBlock-6">
                 Description : <p>{product.description}</p>
               </div>
 

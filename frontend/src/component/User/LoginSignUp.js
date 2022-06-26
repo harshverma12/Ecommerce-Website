@@ -1,13 +1,17 @@
+/* eslint-disable react/jsx-no-undef */
 import React, { Fragment, useRef, useState, useEffect } from "react";
 import "./LoginSignUp.css";
 import Loader from "../layout/Loader/Loader";
 import { Link } from "react-router-dom";
+// import MobileOutlineIcon from
+// import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LockOpenIcon from "@material-ui/icons/LockOpen";
 import FaceIcon from "@material-ui/icons/Face";
 import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, login, register } from "../../actions/userAction";
 import { useAlert } from "react-alert";
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 
 const LoginSignUp = ({ history, location }) => {
   const dispatch = useDispatch();
@@ -27,10 +31,12 @@ const LoginSignUp = ({ history, location }) => {
   const [user, setUser] = useState({
     name: "",
     email: "",
+    college: "",
+    // mobile: "",
     password: "",
   });
 
-  const { name, email, password } = user;
+  const { name, email,college, password } = user;
 
   const [avatar, setAvatar] = useState("/Profile.png");
   const [avatarPreview, setAvatarPreview] = useState("/Profile.png");
@@ -47,6 +53,8 @@ const LoginSignUp = ({ history, location }) => {
 
     myForm.set("name", name);
     myForm.set("email", email);
+    myForm.set("college", college);
+    //  myForm.set("moblile", mobile);
     myForm.set("password", password);
     myForm.set("avatar", avatar);
     dispatch(register(myForm));
@@ -110,6 +118,10 @@ const LoginSignUp = ({ history, location }) => {
               <div>
                 <div className="login_signUp_toggle">
                   <p onClick={(e) => switchTabs(e, "login")}>LOGIN</p>
+
+
+
+                  
                   <p onClick={(e) => switchTabs(e, "register")}>REGISTER</p>
                 </div>
                 <button ref={switcherTab}></button>
@@ -135,7 +147,7 @@ const LoginSignUp = ({ history, location }) => {
                     onChange={(e) => setLoginPassword(e.target.value)}
                   />
                 </div>
-                <Link to="/password/forgot">Forget Password ?</Link>
+                <Link to="/password/forgot">Forgot Password ?</Link>
                 <input type="submit" value="Login" className="loginBtn" />
               </form>
               <form
@@ -155,6 +167,8 @@ const LoginSignUp = ({ history, location }) => {
                     onChange={registerDataChange}
                   />
                 </div>
+                <div>                </div>
+
                 <div className="signUpEmail">
                   <MailOutlineIcon />
                   <input
@@ -166,6 +180,35 @@ const LoginSignUp = ({ history, location }) => {
                     onChange={registerDataChange}
                   />
                 </div>
+                <div>                </div>
+
+                <div className="signUpCollege">
+                 <AccountBalanceIcon />
+
+                  <input
+                    type="text"
+                    placeholder="College"
+                    required
+                    name="college"
+                    value={college}
+                    onChange={registerDataChange}
+                  />
+                </div>
+                
+{/* 
+                <div className="signUpMobile">
+                  {/* <CallOutlinedIcon /> */}
+                  {/* <input
+                    type="number"
+                    placeholder="Mobile Number"
+                    required
+                    name="mobile"
+                    value={mobile}
+                    onChange={registerDataChange}
+                  /> */}
+                
+               
+
                 <div className="signUpPassword">
                   <LockOpenIcon />
                   <input
@@ -177,6 +220,7 @@ const LoginSignUp = ({ history, location }) => {
                     onChange={registerDataChange}
                   />
                 </div>
+         
 
                 <div id="registerImage">
                   <img src={avatarPreview} alt="Avatar Preview" />
@@ -187,6 +231,8 @@ const LoginSignUp = ({ history, location }) => {
                     onChange={registerDataChange}
                   />
                 </div>
+         
+
                 <input type="submit" value="Register" className="signUpBtn" />
               </form>
             </div>

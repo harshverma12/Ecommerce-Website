@@ -28,13 +28,18 @@ const Profile = ({ history }) => {
             </div>
             <div>
               <div>
-                <h4>Full Name</h4>
+                <h4> Name</h4>
                 <p>{user.name}</p>
               </div>
               <div>
                 <h4>Email</h4>
                 <p>{user.email}</p>
               </div>
+              <div>
+                <h4>College</h4>
+                <p>{user.college}</p>
+              </div>
+             
               <div>
                 <h4>Joined On</h4>
                 <p>{String(user.createdAt).substr(0, 10)}</p>

@@ -10,6 +10,7 @@ import DescriptionIcon from "@material-ui/icons/Description";
 import StorageIcon from "@material-ui/icons/Storage";
 import SpellcheckIcon from "@material-ui/icons/Spellcheck";
 import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
+import PhoneIcon from "@material-ui/icons/Phone";
 import SideBar from "./Sidebar";
 import { NEW_PRODUCT_RESET } from "../../constants/productConstants";
 
@@ -22,19 +23,24 @@ const NewProduct = ({ history }) => {
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
   const [description, setDescription] = useState("");
+
+  const [contact, setContact] = useState(0);
+
+  const [college, setCollege] = useState("");
   const [category, setCategory] = useState("");
   const [Stock, setStock] = useState(0);
   const [images, setImages] = useState([]);
   const [imagesPreview, setImagesPreview] = useState([]);
-
   const categories = [
     "Laptop",
-    "Footwear",
-    "Bottom",
-    "Tops",
-    "Attire",
+ 
+    "Labcoat",
+    "Drafter",
+    "Dangri",
+    "Mobile",
     "Camera",
-    "SmartPhones",
+   
+  
   ];
 
   useEffect(() => {
@@ -58,6 +64,9 @@ const NewProduct = ({ history }) => {
     myForm.set("name", name);
     myForm.set("price", price);
     myForm.set("description", description);
+    // eslint-disable-next-line no-undef
+    myForm.set("contact", contact);
+    myForm.set("college", college);
     myForm.set("category", category);
     myForm.set("Stock", Stock);
 
@@ -131,7 +140,24 @@ const NewProduct = ({ history }) => {
                 rows="1"
               ></textarea>
             </div>
-
+            <div>
+              <PhoneIcon />
+              <input
+                type="number"
+                placeholder="Contact Number"
+                required
+                onChange={(e) => setContact(e.target.value)}
+              />
+            </div>
+            <div>
+              <AttachMoneyIcon />
+              <input
+                type="text"
+                placeholder="College"
+                required
+                onChange={(e) => setCollege(e.target.value)}
+              />
+            </div>
             <div>
               <AccountTreeIcon />
               <select onChange={(e) => setCategory(e.target.value)}>
