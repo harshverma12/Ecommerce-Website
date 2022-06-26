@@ -15,6 +15,15 @@ const productSchema = mongoose.Schema({
     required: [true, "Please Enter product Price"],
     maxLength: [8, "Price cannot exceed 8 characters"],
   },
+  contact  : {
+    type: Number,
+    required: [true, "Please Enter  Number"],
+    maxLength: [10, "Number cannot exceed 10  characters"],
+  },
+  college: {
+    type: String,
+    required: [true, "Please Enter College"],
+  },
   ratings: {
     type: Number,
     default: 0,
@@ -49,7 +58,7 @@ const productSchema = mongoose.Schema({
     {
       user: {
         type: mongoose.Schema.ObjectId,
-        ref: "User",
+        ref: "Admin",
         required: true,
       },
       name: {
@@ -69,7 +78,7 @@ const productSchema = mongoose.Schema({
 
   user: {
     type: mongoose.Schema.ObjectId,
-    ref: "User",
+    ref: "Admin",
     required: true,
   },
   createdAt: {
