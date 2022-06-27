@@ -257,7 +257,7 @@ const ProductDetails = ({ match }) => {
                 ))}
             </div>
           ) : (
-            <p className="noReviews">No Reviews Yet</p>
+            <p className="noReviews"> </p>
           )}
         </Fragment>
       )}
