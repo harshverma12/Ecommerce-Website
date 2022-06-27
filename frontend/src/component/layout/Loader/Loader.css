@@ -14,7 +14,7 @@
 
   border-radius: 50%;
 
-  animation:  loadingRotate 800ms linear infinite;
+  animation:  loadingRotate 800ms point infinite;
 }
 
 @keyframes loadingRotate {

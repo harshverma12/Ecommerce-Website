@@ -169,12 +169,12 @@ const ProductDetails = ({ match }) => {
                 </div>
 
                 <div>           
-<p></p>
+{/* <p></p> */}
                 <div className="detailsBlock-4">
                 Contact Number :  {product.contact}
                 </div>      
                  </div>
-                 <p></p>
+                 {/* <p></p> */}
 
                
                 {/* <div> */}
@@ -182,7 +182,7 @@ const ProductDetails = ({ match }) => {
                 College :    {product.college} 
                 {/* </div> */}
                 </div>
-                <p></p>
+                {/* <p></p> */}
 
                 {/* <p>
                   Status:
