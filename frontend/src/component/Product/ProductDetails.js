@@ -124,7 +124,7 @@ const ProductDetails = ({ match }) => {
             <div>
               <div className="detailsBlock-1">
                 <h2>{product.name}</h2>
-                <p>Product # {product._id}</p>
+                {/* <p>Product # {product._id}</p> */}
               </div>
               <div className="detailsBlock-2">
                 <Rating {...options} />
@@ -137,9 +137,11 @@ const ProductDetails = ({ match }) => {
                 <h1>{`₹${product.price}`}</h1>
                 <div className="detailsBlock-3-1">
                   <div className="detailsBlock-3-1-1">
-                    <button onClick={decreaseQuantity}>-</button>
+
+                    {/* <button onClick={decreaseQuantity}>-</button>
                     <input readOnly type="number" value={quantity} />
                     <button onClick={increaseQuantity}>+</button>
+                     */}
                   </div>
                   <button
                     disabled={product.Stock < 1 ? true : false}
@@ -155,22 +157,22 @@ const ProductDetails = ({ match }) => {
                 Contact Number :  {product.contact}
                 </div>      
                  </div>
-                 <p></p>
+                 {/* <p></p> */}
 
                
-                <div>
+                {/* <div> */}
                 <div className="detailsBlock-5">
                 College :    {product.college} 
-                </div>
+                {/* </div> */}
                 </div>
                 <p></p>
 
-                <p>
+                {/* <p>
                   Status:
                   <b className={product.Stock < 1 ? "redColor" : "greenColor"}>
                     {product.Stock < 1 ? "OutOfStock" : "InStock"}
                   </b>
-                </p>
+                </p> */}
               </div>
 
               <div className="detailsBlock-6">
