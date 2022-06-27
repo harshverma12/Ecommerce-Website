@@ -121,9 +121,10 @@ const ProductDetails = ({ match }) => {
                   ))}
               </Carousel>
             </div>
-<div class="card" style="width: 30rem;">
-  <div class="card-body">
+
             <div>
+            <div className="card" style="width: 30rem;">
+  <div className="card-body">
               <div className="detailsBlock-1">
                 <h2>{product.name}</h2>
                 {/* <p>Product # {product._id}</p> */}
