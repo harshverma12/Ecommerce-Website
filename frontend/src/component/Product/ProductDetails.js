@@ -126,15 +126,25 @@ const ProductDetails = ({ match }) => {
             <div className="card" style="width: 30rem;">
   <div className="card-body">
               {/* <div className="detailsBlock-1"> */}
-                <h2>{product.name}</h2>
+              <h2 className={product.name}>Card title</h2>
+
+                {/* <h2>{product.name}</h2> */}
                 {/* <p>Product # {product._id}</p> */}
+
               {/* </div> */}
+
+              
               {/* <div className="detailsBlock-2"> */}
-                <Rating {...options} />
+                
+                {/* <Rating {...options} />
+
                 <span className="detailsBlock-2-span">
                   {" "}
                   ({product.numOfReviews} Reviews)
-                </span>
+                </span> */}
+
+
+
               {/* </div> */}
 
               </div>      
