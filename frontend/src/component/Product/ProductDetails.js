@@ -106,6 +106,7 @@ const ProductDetails = ({ match }) => {
       ) : (
         <Fragment>
           <MetaData title={`${product.name} -- ECOMMERCE`} />
+
           <div className="ProductDetails">
             <div>
               <Carousel>
@@ -120,7 +121,8 @@ const ProductDetails = ({ match }) => {
                   ))}
               </Carousel>
             </div>
-
+<div class="card" style="width: 30rem;">
+  <div class="card-body">
             <div>
               <div className="detailsBlock-1">
                 <h2>{product.name}</h2>
@@ -133,6 +135,8 @@ const ProductDetails = ({ match }) => {
                   ({product.numOfReviews} Reviews)
                 </span>
               </div>
+              </div>      
+                 </div>
               <div className="detailsBlock-3">
                 <h1>{`₹${product.price}`}</h1>
                 <div className="detailsBlock-3-1">
@@ -157,7 +161,7 @@ const ProductDetails = ({ match }) => {
                 Contact Number :  {product.contact}
                 </div>      
                  </div>
-                 {/* <p></p> */}
+                 <p></p>
 
                
                 {/* <div> */}
