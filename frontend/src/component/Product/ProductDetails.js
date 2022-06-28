@@ -215,9 +215,7 @@ const ProductDetails = ({ match }) => {
 </Card> */}
             </div>
           </div>
-          <CCard>
-  <CCardBody>This is some text within a card body.</CCardBody>
-</CCard>
+ 
           <h3 className="reviewsHeading">REVIEWS</h3>
 
           <Dialog
