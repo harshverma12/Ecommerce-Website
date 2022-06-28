@@ -18,10 +18,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="/" href="#">Home <span class="sr-only"></span></a>
-      <a class="/products/" href="#">Products</a>
-      <a class="/cart/" href="#">Cart</a>
-      <a class="/login/" href="#">Login</a>
+      <a class="/nav-item nav-link/" href="/">Home <span class="sr-only"></span></a>
+      <a class="/nav-item nav-link/" href="/products/">Products</a>
+      <a class="/nav-item nav-link/" href="/cart/">Cart</a>
+      <a class="/nav-item nav-link/" href="/login/">Login</a>
     </div>
   </div>
 </nav>
