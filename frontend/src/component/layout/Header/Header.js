@@ -1,4 +1,6 @@
 import React from "react";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 // import { ReactNavbar } from "navbar.js";
 
 // import logo from "../../../images/logo.png";
@@ -29,7 +31,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
       </>
   )
 }
-
+export default Header
 
 
 
