@@ -7,7 +7,7 @@ import { clearErrors, getProduct } from "../../actions/productAction";
 import { useSelector, useDispatch } from "react-redux";
 import Loader from "../layout/Loader/Loader";
 import { useAlert } from "react-alert";
-
+// import 'bootstrap/dist/css/bootstrap.min.css';
 const Home = () => {
   const alert = useAlert();
   const dispatch = useDispatch();
@@ -30,14 +30,14 @@ const Home = () => {
           <MetaData title="CollegeNest" />
 
           <div className="banner">
-            <p>Welcome to CollegeNest</p>
+            {/* <p>Welcome to CollegeNest</p> */}
             {/* <h1>FIND AMAZING PRODUCTS BELOW</h1> */}
 
-            <a href="#container">
+            {/* <a href="#container">
               <button>
                 Scroll <CgMouse />
               </button>
-            </a>
+            </a> */}
           </div>
 
           <h2 className="homeHeading">Featured Products</h2>
