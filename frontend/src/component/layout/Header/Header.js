@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
   const Header = () => {
   return (
     <>
-       <nav class="navbar navbar-dark bg-dark">
+       <nav class=" navbar navbar-dark bg-primary">
   <a class="navbar-brand" href="#">CollegeNest</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
