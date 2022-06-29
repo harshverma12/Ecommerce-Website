@@ -13,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
     <>
      {/* <div class="shadow-lg p-3 mb-5 bg-white rounded">  */}
 <nav class=" navbar navbar-expand-lg navbar-light bg-light ">
- {/* <div class="shadow-lg p-3 mb-5 bg-white rounded">     */}
+ <div class="shadow-lg p-3 mb-5 bg-white rounded">    
   <div class="container-fluid">
     <a class="navbar-brand" href="/">CollegeNest</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
         {/* <a class="nav-link disabled">Disabled</a> */}
       </div>
     </div>
-    
+    </div>
     </div>
 </nav>
 
