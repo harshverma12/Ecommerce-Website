@@ -46,19 +46,19 @@ const ProductDetails = ({ match }) => {
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
 
-  const increaseQuantity = () => {
-    if (product.Stock <= quantity) return;
+  // const increaseQuantity = () => {
+  //   if (product.Stock <= quantity) return;
 
-    const qty = quantity + 1;
-    setQuantity(qty);
-  };
+  //   const qty = quantity + 1;
+  //   setQuantity(qty);
+  // };
 
-  const decreaseQuantity = () => {
-    if (1 >= quantity) return;
+  // const decreaseQuantity = () => {
+  //   if (1 >= quantity) return;
 
-    const qty = quantity - 1;
-    setQuantity(qty);
-  };
+  //   const qty = quantity - 1;
+  //   setQuantity(qty);
+  // };
 
   const addToCartHandler = () => {
     dispatch(addItemsToCart(match.params.id, quantity));
@@ -200,19 +200,7 @@ const ProductDetails = ({ match }) => {
                 Submit Review
               </button>
 
-
-              {/* <Card style={{ width: '18rem' }}>
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Card.Link href="#">Card Link</Card.Link>
-    <Card.Link href="#">Another Link</Card.Link>
-  </Card.Body>
-</Card> */}
+ 
             </div>
           </div>
  

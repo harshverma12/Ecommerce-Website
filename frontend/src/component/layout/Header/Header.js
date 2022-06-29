@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
   return (
     <>
      {/* <div class="shadow-lg p-3 mb-5 bg-white rounded">  */}
-<nav class=" shadow-lg p-3 mb-5 bg-white rounded ">
+<nav class=" navbar navbar-expand-lg navbar-light bg-light ">
  {/* <div class="shadow-lg p-3 mb-5 bg-white rounded">     */}
   <div class="container-fluid">
     <a class="navbar-brand" href="/">CollegeNest</a>
