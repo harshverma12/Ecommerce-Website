@@ -8,11 +8,12 @@ import React from "react";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+ 
   const Header = () => {
   return (
     <>
     {/* <div class="shadow p-3 mb-5 bg-body rounded">  */}
-<nav class=" shadow p-3 mb-5 bg-body rounded   navbar navbar-expand-lg navbar-light bg-light "> 
+<nav class=" shadow p-3 mb-5 bg-body rounded    navbar navbar-expand-lg navbar-light bg-light ">  
    
   <div class="container-fluid">
     <a class="navbar-brand" href="/">CollegeNest</a>

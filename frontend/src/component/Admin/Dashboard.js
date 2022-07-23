@@ -52,16 +52,16 @@ const Dashboard = () => {
     ],
   };
 
-  const doughnutState = {
-    labels: ["Out of Stock", "InStock"],
-    datasets: [
-      {
-        backgroundColor: ["#00A6B4", "#6800B4"],
-        hoverBackgroundColor: ["#4B5000", "#35014F"],
-        data: [outOfStock, products.length - outOfStock],
-      },
-    ],
-  };
+  // const doughnutState = {
+  //   labels: ["Out of Stock", "InStock"],
+  //   datasets: [
+  //     {
+  //       backgroundColor: ["#00A6B4", "#6800B4"],
+  //       hoverBackgroundColor: ["#4B5000", "#35014F"],
+  //       data: [outOfStock, products.length - outOfStock],
+  //     },
+  //   ],
+  // };
 
   return (
     <div className="dashboard">
@@ -92,14 +92,14 @@ const Dashboard = () => {
             </Link>
           </div>
         </div>
-
+{/* 
         <div className="lineChart">
           <Line data={lineState} />
-        </div>
+        </div> */}
 
-        <div className="doughnutChart">
+        {/* <div className="doughnutChart">
           <Doughnut data={doughnutState} />
-        </div>
+        </div> */}
       </div>
     </div>
   );
