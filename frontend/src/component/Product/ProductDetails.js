@@ -62,7 +62,7 @@ const ProductDetails = ({ match }) => {
 
   const addToCartHandler = () => {
     dispatch(addItemsToCart(match.params.id, quantity));
-    alert.success("Item Added To Cart");
+    alert.success("item added to cart");
   };
 
   const submitReviewToggle = () => {
@@ -206,7 +206,7 @@ const ProductDetails = ({ match }) => {
                     Add to Cart
                   </button>
 
-                  
+
 
               <button onClick={submitReviewToggle} className="submitReview">
                 Submit Review

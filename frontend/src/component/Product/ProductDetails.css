@@ -122,13 +122,25 @@
   color: rgba(0, 0, 0, 0.534);
   font: 300 0.8vmax sans-serif;
 }
-
+.addcart
+{
+  border: none;
+  background-color:#1e90ff;
+  font: 500 0.7vmax "Roboto";
+  border-radius: 0px;
+  padding: 0.6vmax 2vmax;
+  margin: 1vmax 0;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  outline: none;
+}
 .submitReview {
   border: none;
   background-color:#1e90ff;
   font: 500 0.7vmax "Roboto";
-  border-radius: 20px;
-  padding: 0.6vmax 2vmax;
+  border-radius: 0px;
+  padding: 0.9vmax 3.3vmax;
   margin: 1vmax 0;
   color: white;
   cursor: pointer;
