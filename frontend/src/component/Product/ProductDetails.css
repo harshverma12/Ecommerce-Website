@@ -122,6 +122,7 @@
   color: rgba(0, 0, 0, 0.534);
   font: 300 0.8vmax sans-serif;
 }
+
 .addcart
 {
   border: none;
@@ -135,6 +136,11 @@
   transition: all 0.5s;
   outline: none;
 }
+.addcart:hover {
+  background-color: #1e90ff;
+  transform: scale(1.1);
+}
+
 .submitReview {
   border: none;
   background-color:#1e90ff;

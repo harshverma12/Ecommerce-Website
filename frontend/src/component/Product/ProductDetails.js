@@ -202,7 +202,7 @@ const ProductDetails = ({ match }) => {
               <button
                     disabled={product.Stock < 1 ? true : false}
                     onClick={addToCartHandler} 
-                    // className="addcart"
+                    className="addcart"
                   >
                     Add to Cart
                   </button>
