@@ -89,7 +89,7 @@ const Products = ({ match }) => {
           </div>
 
           <div className="filterBox">
-            
+{/*             
             <Typography>Price</Typography>
             <Slider
               value={price}
@@ -98,7 +98,7 @@ const Products = ({ match }) => {
               aria-labelledby="range-slider"
               min={0}
               max={25000}
-            />
+            /> */}
 
             <Typography>Categories</Typography>
             <ul className="categoryBox">
@@ -112,7 +112,7 @@ const Products = ({ match }) => {
                 </li>
               ))}
             </ul>
-
+{/* 
             <fieldset>
               <Typography component="legend">Ratings Above</Typography>
               <Slider
@@ -125,7 +125,7 @@ const Products = ({ match }) => {
                 min={0}
                 max={5}
               />
-            </fieldset>
+            </fieldset> */}
           </div>
 
           {resultPerPage < count && (
