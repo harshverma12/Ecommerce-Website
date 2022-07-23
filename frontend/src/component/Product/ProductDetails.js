@@ -109,7 +109,7 @@ const ProductDetails = ({ match }) => {
 
           <div className="ProductDetails">
             <div>
-              <Carousel>
+              {/* <Carousel> */}
                 {product.images &&
                   product.images.map((item, i) => (
                     <img
@@ -119,18 +119,16 @@ const ProductDetails = ({ match }) => {
                       alt={`${i} Slide`}
                     />
                   ))}
-              </Carousel>
+              {/* </Carousel> */}
             </div>
 
             <div>
-            {/* <div className="card" style="width: 30rem;">
-  <div className="card-body"> */}
+
+       
               <div className="detailsBlock-1">
-              {/* <h2 className={product.name}>Card title</h2> */}
-
+              
                 <h2>{product.name}</h2>
-                {/* <p>Product # {product._id}</p> */}
-
+                
               </div>
 
 
