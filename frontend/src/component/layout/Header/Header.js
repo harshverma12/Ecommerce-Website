@@ -1,18 +1,53 @@
-import React from "react";
+import React   from "react";
+// import React, { useState } from 'react';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-
+// import MetaData from "../layout/MetaData";
 // import { ReactNavbar } from "navbar.js";
 
 // import logo from "../../../images/logo.png";
-
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-
  
+import 'bootstrap/dist/css/bootstrap.min.css';
+ 
+ 
+// const Search = ({ history }) => {
+//   const [keyword, setKeyword] = useState("");
+
+//   const searchSubmitHandler = (e) => {
+//     e.preventDefault();
+//     if (keyword.trim()) {
+//       history.push(`/products/${keyword}`);
+//     } else {
+//       history.push("/products");
+//     }
+//   };
+
+  // return (
+    // <Fragment>
+    //   <MetaData title="Search A Product -- ECOMMERCE" />
+    //   <form className="searchBox" onSubmit={searchSubmitHandler}>
+    //     <input
+    //       type="text"
+    //       placeholder="Search a Product ..."
+    //       onChange={(e) => setKeyword(e.target.value)}
+    //     />
+    //     <input type="submit" value="Search" />
+    //   </form>
+    // </Fragment>
+  // );
+// };
+  
+
+
+
   const Header = () => {
   return (
     <>
     {/* <div class="shadow p-3 mb-5 bg-body rounded">  */}
+
+ 
+ 
+
+
 <nav class=" shadow p-3 mb-5 bg-body rounded    navbar navbar-expand-lg navbar-light bg-light ">  
    
   <div class="container-fluid">
@@ -21,96 +56,51 @@ import 'bootstrap/dist/css/bootstrap.min.css';
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
+      <ul class="navbar-nav">
 
+<li>
 
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
-        <a class="nav-link" href="/products/">Products</a>
-        {/* <a class="nav-link" href="#">Cart</a> */}
-        <a class="nav-link" href="/login/">Login</a>
+<a class="nav-link active" aria-current="page" href="/">Home</a>
+       
+</li> 
+<li> 
+<a class="nav-link" href="/products/">Products</a>
+       
+  </li>  
 
-        {/* <a class="nav-link disabled">Disabled</a> */}
-      </div>
-    </div>
-    </div>
-  
-</nav>
-{/* </div> */}
+        <li>  
+        <a className="nav-link" href="/login/">Login</a>
+      
+</li>
 
-{/*  
-       <nav class=" navbar navbar-dark bg-primary">
-  <a class="navbar-brand" href="/">CollegeNest</a>
-
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+<li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Inbox</a>
+                            <a href="#" class="dropdown-item">Drafts</a>
+                            <a href="#" class="dropdown-item">Sent Items</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#"class="dropdown-item">Trash</a>
+                        </div>
+                    </li>
+      </ul>
     
-  </button> 
- 
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="/nav-item nav-link/" href="/">Home <span class="sr-only"></span></a>
-      <a class="/nav-item nav-link/" href="/products/">Products</a>
-      <a class="/nav-item nav-link/" href="/cart/">Cart</a>
-      <a class="/nav-item nav-link/" href="/login/">Login</a>
     </div>
-  </div>
-</nav>   */}
+ 
+ 
+
+    </div>
+   
+ </nav>
 
 
 
       </>
   )
 }
-export default Header
 
 
+export default Header;
 
 
-
-
-
-
-
-
-
-
-
-
-// const options = {
-//   // burgerColorHover: "#eb4034",
-//   logo,
-//   logoWidth: "20vmax",
-//   navColor1: "white",
-//   logoHoverSize: "10px",
-//   logoHoverColor: "#eb4034",
-//   link1Text: "Home",
-//   link2Text: "Products",
-//   link3Text: "Contact",
-//   link4Text: "About",
-//   link1Url: "/",
-//   link2Url: "/products/",
-//   link3Url: "/contact/",
-//   link4Url: "/about/",
-//   link1Size: "1.3vmax",
-//   link1Color: "rgba(35, 35, 35,0.8)",
-//   nav1justifyContent: "flex-end",
-//   nav2justifyContent: "flex-end",
-//   nav3justifyContent: "flex-start",
-//   nav4justifyContent: "flex-start",
-//   link1ColorHover: "#eb4034",
-//   link1Margin: "1vmax",
-//   profileIconUrl: "/login",
-//   profileIconColor: "rgba(35, 35, 35,0.8)",
-//   searchIconColor: "rgba(35, 35, 35,0.8)",
-//   cartIconColor: "rgba(35, 35, 35,0.8)",
-//   profileIconColorHover: "#eb4034",
-//   searchIconColorHover: "#eb4034",
-//   cartIconColorHover: "#eb4034",
-//   cartIconMargin: "1vmax",
-// };
-
-// const Header = () => {
-//   return <ReactNavbar {...options} />;
-// };
-
-// export default Header;
+ 
