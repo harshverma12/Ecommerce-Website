@@ -5,19 +5,19 @@ import { clearErrors, getProduct } from "../../actions/productAction";
 import Loader from "../layout/Loader/Loader";
 import ProductCard from "../Home/ProductCard";
 import Pagination from "react-js-pagination";
-import Slider from "@material-ui/core/Slider";
+// import Slider from "@material-ui/core/Slider";
 import { useAlert } from "react-alert";
 import Typography from "@material-ui/core/Typography";
 import MetaData from "../layout/MetaData";
 
 const categories = [
-  "Laptop",
+  // "Laptop",
  
-  "Labcoat",
-  "Drafter",
-  "Dangri",
-  "Mobile",
-  "Camera",
+  // "Labcoat",
+  // "Drafter",
+  // "Dangri",
+  // "Mobile",
+  // "Camera",
  
 
 
