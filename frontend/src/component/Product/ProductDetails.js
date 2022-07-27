@@ -123,8 +123,14 @@ const ProductDetails = ({ match }) => {
             </div>
 
             <div>
+    
+            <div className="ui cards"/>
+  <div className="card">
+    <div className="content">
+   
+      <div className="description">
 
-       
+     
               <div className="detailsBlock-1">
               
                 <h2>{product.name}</h2>
@@ -214,6 +220,15 @@ const ProductDetails = ({ match }) => {
  
             </div>
           </div>
+
+          
+
+        
+      </div>
+    </div>
+  </div>
+   
+
  
           <h3 className="reviewsHeading">REVIEWS</h3>
 

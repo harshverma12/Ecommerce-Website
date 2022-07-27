@@ -5,66 +5,35 @@ import React   from "react";
 // import { ReactNavbar } from "navbar.js";
 
 // import logo from "../../../images/logo.png";
- 
+//  import  bootstrap.bundle.min.js   ;
 import 'bootstrap/dist/css/bootstrap.min.css';
- 
- 
-// const Search = ({ history }) => {
-//   const [keyword, setKeyword] = useState("");
-
-//   const searchSubmitHandler = (e) => {
-//     e.preventDefault();
-//     if (keyword.trim()) {
-//       history.push(`/products/${keyword}`);
-//     } else {
-//       history.push("/products");
-//     }
-//   };
-
-  // return (
-    // <Fragment>
-    //   <MetaData title="Search A Product -- ECOMMERCE" />
-    //   <form className="searchBox" onSubmit={searchSubmitHandler}>
-    //     <input
-    //       type="text"
-    //       placeholder="Search a Product ..."
-    //       onChange={(e) => setKeyword(e.target.value)}
-    //     />
-    //     <input type="submit" value="Search" />
-    //   </form>
-    // </Fragment>
-  // );
-// };
-  
-
+// import { DropdownButton , Dropdown } from "react-bootstrap";
 
 
   const Header = () => {
   return (
-    <>
-    {/* <div class="shadow p-3 mb-5 bg-body rounded">  */}
-
- 
+    <> 
  
 
-
-<nav class=" shadow p-3 mb-5 bg-body rounded    navbar navbar-expand-lg navbar-light bg-light ">  
+<nav className=" shadow p-3 mb-5 bg-body rounded    navbar navbar-expand-lg navbar-light bg-light ">  
    
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">CollegeNest</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+  <div className="container-fluid">
+
+    <a className="navbar-brand" href="/">CollegeNest</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <ul class="navbar-nav">
+   
+    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <ul className="navbar-nav">
 
 <li>
 
-<a class="nav-link active" aria-current="page" href="/">Home</a>
+<a className="nav-link active" aria-current="page" href="/">Home</a>
        
 </li> 
 <li> 
-<a class="nav-link" href="/products/">Products</a>
+<a className="nav-link" href="/products/">Products</a>
        
   </li>  
 
@@ -73,16 +42,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
       
 </li>
 
-<li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More </a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Inbox</a>
-                            <a href="#" class="dropdown-item">Drafts</a>
-                            <a href="#" class="dropdown-item">Sent Items</a>
-                            <div class="dropdown-divider"></div>
-                            <a href="#"class="dropdown-item">Trash</a>
-                        </div>
-                    </li>
+
+
+<div> <li class="dropdown">
+	  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+		Dropdown button
+	  </button>
+	  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+		<li><a class="dropdown-item" href="#">Action</a></li>
+		<li><a class="dropdown-item" href="#">Another action</a></li>
+		<li><a class="dropdown-item" href="#">Something else here</a></li>
+	  </ul>
+	</li>
+
+  </div>
+
+
+  
       </ul>
     
     </div>
@@ -91,10 +67,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
     </div>
    
- </nav>
-
-
-
+ </nav>      
+ 
+ 
       </>
   )
 }
