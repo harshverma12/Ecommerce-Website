@@ -124,12 +124,7 @@ const ProductDetails = ({ match }) => {
 
             <div>
     
-            <div className="ui cards"/>
-  <div className="card">
-    <div className="content">
-   
-      <div className="description">
-
+        
      
               <div className="detailsBlock-1">
               
@@ -221,12 +216,7 @@ const ProductDetails = ({ match }) => {
             </div>
           </div>
 
-          
-
-        
-      </div>
-    </div>
-  </div>
+    
    
 
  
