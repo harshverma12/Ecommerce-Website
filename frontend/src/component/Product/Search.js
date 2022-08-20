@@ -20,7 +20,7 @@ const Search = ({ history }) => {
       <form className="searchBox" onSubmit={searchSubmitHandler}>
         <input
           type="text"
-          placeholder="Search a Product ..."
+          placeholder="Search "
           onChange={(e) => setKeyword(e.target.value)}
         />
         <input type="submit" value="Search" />

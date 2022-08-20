@@ -13,6 +13,7 @@ process.on("uncaughtException", (err) => {
 // Config
 if (process.env.NODE_ENV !== "PRODUCTION") {
   require("dotenv").config({ path: "backend/config/config.env" });
+  
 }
 
 // Connecting to database
@@ -35,5 +36,6 @@ process.on("unhandledRejection", (err) => {
 
   server.close(() => {
     process.exit(1);
+
   });
 });

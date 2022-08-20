@@ -1,5 +1,5 @@
  /* eslint-disable react/jsx-no-undef */
- import React, { Fragment, useRef, useState, useEffect } from "react";
+ import React, { Fragment, useRef, useState, useEffect,useContext } from "react";
  import "./LoginSignUp.css";
  import Loader from "../layout/Loader/Loader";
  import { Link } from "react-router-dom";
@@ -12,9 +12,15 @@
  import { clearErrors, login, register } from "../../actions/userAction";
  import { useAlert } from "react-alert";
  // import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
- 
+ import {UserContext} from "../../App";
+
+
+
  const LoginSignUp = ({ history, location }) => {
-   const dispatch = useDispatch();
+const {state, dispatch } = useContext(UserContext);
+
+
+  //  const dispatch = useDispatch();
    const alert = useAlert();
  
    const { error, loading, isAuthenticated } = useSelector(
@@ -43,8 +49,13 @@
  
    const loginSubmit = (e) => {
      e.preventDefault();
+
      dispatch(login(loginEmail, loginPassword));
-   };
+   dispatch({type:"USER", payload:true });
+   history.push("/");
+
+   
+    };
  
    const registerSubmit = (e) => {
      e.preventDefault();

@@ -41,6 +41,14 @@ import {
   CLEAR_ERRORS,
 } from "../constants/userConstants";
 
+
+export const reducer = (state, action) => {
+  if(action.type === "USER" )
+  {
+    return action.payload;
+  }
+  return state;
+}
 export const userReducer = (state = { user: {} }, action) => {
   switch (action.type) {
     case LOGIN_REQUEST:

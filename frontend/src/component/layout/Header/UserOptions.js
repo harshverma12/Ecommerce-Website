@@ -96,4 +96,4 @@ const UserOptions = ({ user }) => {
   );
 };
 
-// export default UserOptions;
+export default UserOptions;
